@@ -26,7 +26,7 @@ class Deck:
         for card in card_rank:
             for suit in card_suit:
                 self.cards.append(Card(card, suit).card)
-
+    # метод для перемешивания карт в колоде.
     def shuffle(self):
         num_cards = len(self.cards)
         for i in range(num_cards):
@@ -45,7 +45,7 @@ class Player:
         self.result = None
         self.cards = []
         self.name = name
-
+    # Вывод информации об игроке, какие карты и сколько очков.
     def info(self):
         self.result = 0
         for card in self.cards:
